@@ -11,12 +11,11 @@
         }
     ],
     "routing": "SomeIP_Client",
-    "services": [
+    "clients": [
         {
             "service": "0x1234",
             "instance": "0x5678",
-            "unreliable": "30509",
-            "unicast": "SERVICE_VM_IP"
+            "unreliable": ["30510"]
         }
     ],
     "service-discovery": {
@@ -30,7 +29,6 @@
         "repetitions_max": "3",
         "ttl": "3",
         "cyclic_offer_delay": "2000",
-        "request_response_delay": "1500",
-        "multicast_threshold": "0"
+        "request_response_delay": "1500"
     }
 }

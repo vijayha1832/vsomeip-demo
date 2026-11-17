@@ -14,7 +14,21 @@
         {
             "service": "0x1234",
             "instance": "0x5678",
-            "unreliable": "30509"
+            "unreliable": "30509",
+            "events": [
+                {
+                    "event": "0x8001",
+                    "is_field": "true",
+                    "is_reliable": "false"
+                }
+            ],
+            "eventgroups": [
+                {
+                    "eventgroup": "0x0001",
+                    "events": ["0x8001"],
+                    "threshold": "0"
+                }
+            ]
         }
     ],
     "routing": "SomeIP_Service",
@@ -29,7 +43,6 @@
         "repetitions_max": "3",
         "ttl": "3",
         "cyclic_offer_delay": "2000",
-        "request_response_delay": "1500",
-        "multicast_threshold": "0"
+        "request_response_delay": "1500"
     }
 }
